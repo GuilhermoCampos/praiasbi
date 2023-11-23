@@ -24,7 +24,7 @@ export default function Home() {
         {relatorio?
         <div className='w-full h-full flex-grow-1'>
           <button className='px-3 py-2 rounded-md m-2 bg-sky-800 text-gray-200' onClick={() => {setRelatorio(!relatorio)}}>{relatorio? "Voltar": "Abrir Relatório"}</button>
-          <iframe className='rounded-2xl flex-grow h-screen' title="Report Section" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNzkzYzIzNWQtOGEyYi00NzBmLWJlMjktYWY5Y2ZiZTYwNTQ0IiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"></iframe>
+          <iframe className='rounded-2xl flex-grow h-screen opacity-70' title="Report Section" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNzkzYzIzNWQtOGEyYi00NzBmLWJlMjktYWY5Y2ZiZTYwNTQ0IiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"></iframe>
           <h3 className='font-bold mx-5'>Link para acessar relatório: <a className='text-blue-500' href="https://app.powerbi.com/view?r=eyJrIjoiNzkzYzIzNWQtOGEyYi00NzBmLWJlMjktYWY5Y2ZiZTYwNTQ0IiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9">powerbi.com</a></h3>
         </div>
         : <div className='w-full h-full flex flex-col items-center rounded-xl flex-grow'>
